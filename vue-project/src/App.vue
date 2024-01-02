@@ -1,9 +1,14 @@
+<script setup>
+import Modal from './components/Modal.vue';
+</script>
+
 <!-- <script setup> -->
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
 export default {
   name: 'App',
+  components: {Modal},
   data() {
     return {
       title: 'My first Vue from Export'
@@ -21,8 +26,7 @@ export default {
 
 <template>
   <h1>{{ title }}</h1>
-  <input type="text" ref="name">
-  <button @click="handleClick">click me</button>
+  <Modal />
 </template>
 
 <style scoped>
